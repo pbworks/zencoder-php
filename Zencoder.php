@@ -237,7 +237,7 @@ class ZencoderOutputNotification {
   }
 
   function catch_and_parse() {
-    $notificiation_data = json_decode(trim(file_get_contents('php://input')), true);
-    return new ZencoderOutputNotification($notificiation_data);
+    $notification_data = json_decode(trim(file_get_contents('php://input')), true);
+    return new ZencoderOutputNotification($notification_data);
   }
 }
